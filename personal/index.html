@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="widt=device-width, initial-scale=1">
+	<title>Halloween Store</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/personal.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+<body>
+
+  <header>
+  	<img src="../images/pumpkin.gif" alt="Pumpkin">
+   	<h2>The Halloween Store</h2>
+   	<h3>For the little Goblin in all of us!</h3>
+  </header>
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../index.html" >Home</a></li>
+    	<li><a href="products/index.html">Product List</a></li>
+    	<li><a href="index.html" class="current">Personal</a></li>
+    	<li><a href="decorating/index.html">Decorating Ideas</a>
+    		<ul>
+    			<li><a href="decorating/outdoor.html">Outdoor</a></li>
+    			<li><a href="decorating/indoor.html">Indoor</a></li>
+    			<li><a href="decorating/table.html">Table</a></li>
+    			<li><a href="decorating/treats.html">Treats</a></li>
+    		</ul>
+    	</li>
+    	<li><a href="email.html">Join Email</a></li>
+	</ul>
+  </nav>
+  <main>
+	<section>
+    	<h1>Here is my favorite haunted house!</h1>
+    	<p>
+			<video width="500" height="300" controls poster="../images/VidPoster.jpg">
+				
+				<source src="../media/hobbsgrove.mp4">
+				
+				<object type="application/x-shockwave-flash"
+					width="500" height="300">
+				<param name="movie" value="../media/hobbsgrove.swf">
+				</object>
+				
+			</video>
+		</p>
+	</section>
+	<aside>
+		<nav id="nav_list">
+   		<ul>
+   			<li><a href="pictures.html">Pictures</a></li>
+   			<li><a href="homevideos.html">Home Videos</a></li>
+   			<li><a href="HHouses.html">Haunted Houses</a></li>
+   			<li><a href="sstories.html">Scary Stories</a></li>
+		</ul>
+		</nav>
+	</aside>
+  </main>
+
+  <footer>
+	<p>&copy; 2016 Ben Murach</p>
+  </footer>
+</body>
+</html>
